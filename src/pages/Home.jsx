@@ -50,7 +50,7 @@ Ensure the response is structured, clear, and easy to display in a React app.`;
       method: 'POST',
       headers: {
         'content-type': 'application/json',
-        'X-goog-api-key': 'API kEYs'
+        'VITE_GEMINI_API_KEY': 'API kEYs'
       },
       body: `{"contents":[{"parts":[{"text":"${prompt}"}]}]}`
     };
