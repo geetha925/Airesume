@@ -45,15 +45,7 @@ Provide a rough ATS match score for the current resume against the job descripti
 Explain the reasoning briefly (e.g., missing keywords, formatting issues, irrelevant content).  
 
 Ensure the response is structured, clear, and easy to display in a React app.`;
-    const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
-    const options = {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'VITE_GEMINI_API_KEY': 'API kEYs'
-      },
-      body: `{"contents":[{"parts":[{"text":"${prompt}"}]}]}`
-    };
+  
 
     try {
       const response = await fetch(url, options);
